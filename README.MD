@@ -35,6 +35,9 @@ pip install -r requirements.txt
 
 ## Corre el programa
 ~~~
+# En Windows
+python manage.py runserver
+# En Linux
 python3 manage.py runserver
 ~~~
 
@@ -43,6 +46,11 @@ python3 manage.py runserver
 
 2. Es necesario aún hacer las migraciones. puedes usar el siguiente comando:
 ~~~
+# En Windows
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+# En Linux
 python3 manage.py makemigrations
 python3 manage.py migrate
 ~~~
