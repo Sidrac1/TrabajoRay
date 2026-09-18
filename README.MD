@@ -55,5 +55,9 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 ~~~
 
+# Endpoint de prueba:
+http://127.0.0.1:8000/api/v1/users/list/
+# 
+
 
 # Por favor ayuda a colaborar con este repo para que todos tengamos la chamba al corriente
