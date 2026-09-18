@@ -1,0 +1,1 @@
+Agregué este texto solamente para que el repo no ignore la carpeta de static, puedes borrarlo
