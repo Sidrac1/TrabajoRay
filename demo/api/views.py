@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import generics
 
 from django.contrib.auth.models import User
 
@@ -26,6 +27,10 @@ class UserDetailAPIView(APIView):
 ### Banks CRUD
 
 #create
+class createUserApiView(generics.CreateAPIView):
+    queryset = User.objects.all()
+    #llamado al serializador
+    serializer_class = serializers.CreateUserSerializer
 
 #retrieve
 

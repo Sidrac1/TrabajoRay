@@ -5,6 +5,7 @@ from api import views
 app_name = 'api'
 
 urlpatterns = [
+    path('v1/users/create/', views.createUserApiView.as_view(), name='user_create'),
     path('v1/users/list/', views.UserListAPIView.as_view(), name='user-list'),
     path('v1/users/detail/<int:pk>/', views.UserDetailAPIView.as_view(), name='user-detail'),
 
